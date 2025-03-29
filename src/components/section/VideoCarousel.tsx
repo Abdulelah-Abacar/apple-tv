@@ -9,6 +9,11 @@ import {
 import { useWindowSize } from "react-use";
 import Button from "../Button";
 
+interface Movie {
+  name: string;
+  poster: string;
+}
+
 function VideoCarousel() {
   const { width, height } = useWindowSize();
   const carouselWrapperRef = useRef<HTMLDivElement>(null);
